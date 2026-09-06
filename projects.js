@@ -1,0 +1,77 @@
+const projects = [
+  {
+    title: "Don’t Mess with the Don",
+    meta: "UW Blueprint · Apr 2026–present",
+    category: "open-source",
+    blurb:
+      "Nonprofit event platform. I built an asynchronous FastAPI attendance API with SQLAlchemy, nine functional tests, a timezone-aware cron service, and a React/TypeScript QR check-in prototype.",
+    tags: ["Python", "TypeScript", "FastAPI", "React"],
+    links: [
+      { label: "Repository", href: "https://github.com/uwblueprint/dont-mess-with-the-don" },
+      { label: "Attendance PR", href: "https://github.com/uwblueprint/dont-mess-with-the-don/pull/20" },
+    ],
+  },
+  {
+    title: "Qube",
+    meta: "iOS / macOS / watchOS · 2026",
+    category: "apps",
+    blurb:
+      "Speedcube timer with GAN Bluetooth integration. Scramble, time, stats, and CFOP practice, with live cube state from a physical smart cube and a Watch companion.",
+    tags: ["Swift", "SwiftUI", "Bluetooth"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/Qube" }],
+  },
+  {
+    title: "3D Engine",
+    meta: "Personal · Java",
+    category: "graphics",
+    blurb:
+      "Software-only renderer from first principles: rasterization, perspective-correct UV interpolation, back-face culling, OBJ import, and AABB collision. No GPU pipeline.",
+    tags: ["Java", "Graphics", "Linear algebra"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/3D-Engine" }],
+  },
+  {
+    title: "Cube Solver",
+    meta: "Personal · Java",
+    category: "apps",
+    blurb:
+      "Kociemba search with compact 1D byte-array states, precomputed tables, multithreading, and A/B-tested heuristics. About 26 moves per solve and a 10× search speedup.",
+    tags: ["Java", "Search", "Algorithms"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/CubeSolver-Java" }],
+  },
+  {
+    title: "ConflictZero",
+    meta: "Midnight Hackathon · 2026",
+    category: "web",
+    blurb:
+      "Prove a conflict check passed without exposing the confidential relationships behind it. Compact circuit plus a browser demo for professional-services clearance receipts.",
+    tags: ["TypeScript", "ZK", "Midnight"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/conflictzero" }],
+  },
+  {
+    title: "Pizzeria ordering rebuild",
+    meta: "Freelance · private client",
+    category: "web",
+    blurb:
+      "Custom Next.js 16 / React / TypeScript ordering stack: typed menu data, dynamic routes, pizza builder, and a stateful cart with live pricing. Previously launched a Square storefront that did $30k+ in online orders.",
+    tags: ["Next.js", "TypeScript", "React"],
+    links: [],
+  },
+  {
+    title: "Questions to PDF",
+    meta: "Utility · Python",
+    category: "apps",
+    blurb:
+      "Small Python tool for turning question sets into clean, printable PDFs. Built for actual use, not a tutorial dump.",
+    tags: ["Python", "PDF"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/questions-to-pdf" }],
+  },
+  {
+    title: "SDF Engine",
+    meta: "Graphics · C++",
+    category: "graphics",
+    blurb:
+      "Signed-distance-field raymarcher with GLFW, OpenGL, and a fullscreen shader. Sphere, box, and ground plane as a compact C++ starter for real-time SDF scenes.",
+    tags: ["C++", "OpenGL", "GLSL"],
+    links: [],
+  },
+];

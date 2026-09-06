@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Evan Lowry</title>
+  <desc id="desc">A minimal black banner with a wireframe cube and a simple macOS-style window.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#30363d" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="280" rx="18" fill="#0d1117"/>
+  <rect width="1200" height="280" rx="18" fill="url(#grid)"/>
+
+  <g transform="translate(72 50)" fill="none" stroke="#8b949e" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M88 0l76 43v88l-76 43-76-43V43z"/>
+    <path d="M12 43l76 44 76-44M88 87v87"/>
+  </g>
+
+  <g transform="translate(302 43)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect width="826" height="194" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <line x1="0" y1="44" x2="826" y2="44" stroke="#30363d"/>
+    <circle cx="22" cy="22" r="6" fill="#ff5f57"/>
+    <circle cx="42" cy="22" r="6" fill="#febc2e"/>
+    <circle cx="62" cy="22" r="6" fill="#28c840"/>
+    <text x="413" y="28" text-anchor="middle" fill="#8b949e" font-size="14">~/evan-lowry</text>
+
+    <text x="38" y="96" fill="#f0f6fc" font-size="36" font-weight="700">Evan Lowry</text>
+    <text x="38" y="134" fill="#b1bac4" font-size="18">Math · software · open source</text>
+    <text x="38" y="169" fill="#8b949e" font-size="16">University of Waterloo</text>
+    <rect x="253" y="157" width="9" height="16" rx="1" fill="#3fb950"/>
+  </g>
+</svg>

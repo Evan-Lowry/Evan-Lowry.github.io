@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evan Lowry</title>
+    <meta
+      name="description"
+      content="Honours Mathematics student at the University of Waterloo. Software from first principles, open-source work, and shipped client products."
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <svg class="brand-cube" viewBox="0 0 88 87" aria-hidden="true">
+          <path d="M44 0l38 21.5v44L44 87 6 65.5v-44z" />
+          <path d="M6 21.5L44 43.5 82 21.5M44 43.5V87" />
+        </svg>
+        <span>~/evan-lowry</span>
+      </a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#open-source">Open source</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">~/evan-lowry</span>
+          </div>
+          <div class="window-body">
+            <p class="kicker">Honours Mathematics · University of Waterloo</p>
+            <h1>Evan Lowry</h1>
+            <p class="lede">
+              Math · software · open source. I build systems that have to
+              actually run: APIs that hold up, products people use, and graphics
+              I can explain from the math up.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#work">View work</a>
+              <a class="btn" href="https://github.com/Evan-Lowry">GitHub</a>
+              <a class="btn" href="mailto:elowry@uwaterloo.ca">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Public projects from GitHub and local work I can actually show.</p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="open-source">Open source</button>
+          <button class="chip" data-filter="apps">Apps</button>
+          <button class="chip" data-filter="graphics">Graphics</button>
+          <button class="chip" data-filter="web">Web</button>
+        </div>
+        <div id="project-grid" class="grid"></div>
+      </section>
+
+      <section id="open-source" class="section">
+        <div class="section-head">
+          <h2>Open source</h2>
+          <p>Contributions on other people’s repositories, not just my own.</p>
+        </div>
+        <div class="contrib-list">
+          <article class="contrib">
+            <h3>UW Blueprint · Don’t Mess with the Don</h3>
+            <p>
+              Attendance API, timezone-aware cron scheduler, tests, and a QR
+              check-in prototype for a nonprofit event platform.
+            </p>
+            <div class="links">
+              <a href="https://github.com/uwblueprint/dont-mess-with-the-don/pull/20">Attendance API PR</a>
+              <a href="https://github.com/uwblueprint/dont-mess-with-the-don/pull/35">Cron PR</a>
+              <a href="https://github.com/uwblueprint/dont-mess-with-the-don/pull/32">QR exploration</a>
+            </div>
+          </article>
+          <article class="contrib">
+            <h3>Castorini · RankLLM, Anserini, Pyserini</h3>
+            <p>
+              Onboarding and reproducibility work across information-retrieval
+              tooling used in academic IR research.
+            </p>
+            <div class="links">
+              <a href="https://github.com/castorini/rank_llm/pull/429">RankLLM CLI guide</a>
+              <a href="https://github.com/castorini/anserini/pull/3387">Anserini log</a>
+              <a href="https://github.com/castorini/pyserini/pull/2647">Pyserini log</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="window compact">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">contact</span>
+          </div>
+          <div class="window-body">
+            <h2>Get in touch</h2>
+            <p>
+              Waterloo Works, open-source, or a project that needs to ship.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="mailto:elowry@uwaterloo.ca">elowry@uwaterloo.ca</a>
+              <a class="btn" href="https://www.linkedin.com/in/ealowry/">LinkedIn</a>
+              <a class="btn" href="https://github.com/Evan-Lowry">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Evan Lowry</span>
+      <span class="muted">Waterloo, Ontario</span>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
