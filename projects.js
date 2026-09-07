@@ -41,7 +41,7 @@ const projects = [
   {
     title: "ConflictZero",
     meta: "Midnight Hackathon · 2026",
-    category: "web",
+    category: ["web", "hackathon"],
     blurb:
       "Prove a conflict check passed without exposing the confidential relationships behind it. Compact circuit plus a browser demo for professional-services clearance receipts.",
     tags: ["TypeScript", "ZK", "Midnight"],
@@ -64,6 +64,24 @@ const projects = [
       "Small Python tool for turning question sets into clean, printable PDFs. Built for actual use, not a tutorial dump.",
     tags: ["Python", "PDF"],
     links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/questions-to-pdf" }],
+  },
+  {
+    title: "Derive AI",
+    meta: "CxC · 2026",
+    category: ["web", "hackathon"],
+    blurb:
+      "Pen-first math notebook: React and TypeScript frontend, Express and MongoDB backend, Auth0 login, handwriting recognition, step solving, work-checking, and graphing.",
+    tags: ["TypeScript", "React", "Express", "MongoDB"],
+    links: [],
+  },
+  {
+    title: "Olympiknights",
+    meta: "DeltaHacks 12 · Jan 2026",
+    category: ["apps", "hackathon"],
+    blurb:
+      "Two-player Godot combat game controlled by webcam poses. MediaPipe classifies squats, lunges, push-ups, and jumping jacks into in-game actions.",
+    tags: ["GDScript", "Python", "Godot", "MediaPipe"],
+    links: [{ label: "GitHub", href: "https://github.com/diceccoj/deltahacks-12" }],
   },
   {
     title: "SDF Engine",

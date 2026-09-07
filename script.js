@@ -1,10 +1,16 @@
 const grid = document.getElementById("project-grid");
 const chips = document.querySelectorAll(".chip");
 
+function matches(project, filter) {
+  if (filter === "all") return true;
+  const categories = Array.isArray(project.category)
+    ? project.category
+    : [project.category];
+  return categories.includes(filter);
+}
+
 function render(filter) {
-  const items = projects.filter(
-    (project) => filter === "all" || project.category === filter
-  );
+  const items = projects.filter((project) => matches(project, filter));
 
   grid.innerHTML = items
     .map(
