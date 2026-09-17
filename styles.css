@@ -854,11 +854,6 @@ footer {
     max-width: 220px;
   }
 
-  .facts div {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
-  }
-
   .grid {
     grid-template-columns: 1fr;
   }
