@@ -9,7 +9,7 @@ const projects = [
     title: "Pizzeria La Terrazza",
     meta: "Freelance · live client site",
     category: "web",
-    demo: null,
+    demo: { src: "assets/demos/pizzeria-la-terrazza.mp4", poster: "assets/demos/pizzeria-la-terrazza-poster.jpg" },
     blurb:
       "Custom Next.js 16 / React / TypeScript ordering stack: typed menu data, dynamic routes, pizza builder, and a stateful cart with live pricing. Previously launched a Square storefront that did $30k+ in online orders.",
     tags: ["Next.js", "TypeScript", "React"],
@@ -18,6 +18,7 @@ const projects = [
   {
     title: "Don’t Mess with the Don",
     meta: "UW Blueprint · Apr 2026–present",
+    wellNote: "In progress",
     category: "open-source",
     demo: null, // e.g. { src: "assets/demos/don.mp4" }
     blurb:
@@ -32,37 +33,17 @@ const projects = [
     title: "Qube",
     meta: "iOS / macOS / watchOS · 2026",
     category: "apps",
-    demo: null, // e.g. { src: "assets/demos/qube.mp4" }
+    demo: { src: "assets/demos/qube.mp4", poster: "assets/demos/qube-poster.jpg" },
     blurb:
       "Speedcube timer with GAN Bluetooth integration. Scramble, time, stats, and CFOP practice, with live cube state from a physical smart cube and a Watch companion.",
     tags: ["Swift", "SwiftUI", "Bluetooth"],
     links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/Qube" }],
   },
   {
-    title: "3D Engine",
-    meta: "Personal · Java",
-    category: "graphics",
-    demo: null, // e.g. { src: "assets/demos/engine.gif" }
-    blurb:
-      "Software-only renderer from first principles: rasterization, perspective-correct UV interpolation, back-face culling, OBJ import, and AABB collision. No GPU pipeline.",
-    tags: ["Java", "Graphics", "Linear algebra"],
-    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/3D-Engine" }],
-  },
-  {
-    title: "Cube Solver",
-    meta: "Personal · Java",
-    category: "apps",
-    demo: null,
-    blurb:
-      "Kociemba search with compact 1D byte-array states, precomputed tables, multithreading, and A/B-tested heuristics. About 26 moves per solve and a 10× search speedup.",
-    tags: ["Java", "Search", "Algorithms"],
-    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/CubeSolver-Java" }],
-  },
-  {
     title: "ConflictZero",
     meta: "Midnight Hackathon · 2026",
     category: ["web", "hackathon"],
-    demo: null,
+    demo: { src: "assets/demos/conflictzero.mp4", poster: "assets/demos/conflictzero-poster.jpg" },
     blurb:
       "Prove a conflict check passed without exposing the confidential relationships behind it. Compact circuit plus a browser demo for professional-services clearance receipts.",
     tags: ["TypeScript", "ZK", "Midnight"],
@@ -72,20 +53,50 @@ const projects = [
     title: "Derive AI",
     meta: "CxC · 2026",
     category: ["web", "hackathon"],
-    demo: null,
+    demo: { src: "assets/demos/derive-ai.mp4", poster: "assets/demos/derive-ai-poster.jpg" },
     blurb:
       "Pen-first math notebook: React and TypeScript frontend, Express and MongoDB backend, Auth0 login, handwriting recognition, step solving, work-checking, and graphing.",
     tags: ["TypeScript", "React", "Express", "MongoDB"],
-    links: [],
+    links: [{ label: "GitHub", href: "https://github.com/jad-chahin/DeriveAI" }],
   },
   {
     title: "Olympiknights",
     meta: "DeltaHacks 12 · Jan 2026",
     category: ["apps", "hackathon"],
-    demo: null,
+    demo: { src: "assets/demos/olympiknights.mp4", poster: "assets/demos/olympiknights-poster.jpg" },
     blurb:
       "Two-player Godot combat game controlled by webcam poses. MediaPipe classifies squats, lunges, push-ups, and jumping jacks into in-game actions.",
     tags: ["GDScript", "Python", "Godot", "MediaPipe"],
     links: [{ label: "GitHub", href: "https://github.com/diceccoj/deltahacks-12" }],
+  },
+  {
+    title: "3D Engine",
+    meta: "Personal · Java",
+    category: "graphics",
+    demo: { src: "assets/demos/3d-engine.mp4", poster: "assets/demos/3d-engine-poster.jpg" },
+    blurb:
+      "Software-only renderer from first principles: rasterization, perspective-correct UV interpolation, back-face culling, OBJ import, and AABB collision. No GPU pipeline.",
+    tags: ["Java", "Graphics", "Linear algebra"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/3D-Engine" }],
+  },
+  {
+    title: "Cube Solver",
+    meta: "Personal · Java",
+    category: "apps",
+    demo: { src: "assets/demos/cube-solver.mp4", poster: "assets/demos/cube-solver-poster.jpg" },
+    blurb:
+      "Kociemba search with compact 1D byte-array states, precomputed tables, multithreading, and A/B-tested heuristics. About 26 moves per solve and a 10× search speedup.",
+    tags: ["Java", "Search", "Algorithms"],
+    links: [{ label: "GitHub", href: "https://github.com/Evan-Lowry/CubeSolver-Java" }],
+  },
+  {
+    title: "Scratch Raycaster",
+    meta: "First coding project · Grade 9",
+    category: "graphics",
+    demo: { src: "assets/demos/scratch-raycaster.mp4", poster: "assets/demos/scratch-raycaster-poster.jpg" },
+    blurb:
+      "Built in grade 9 just for fun to explore 3D rendering: a from-scratch raycaster casting rays per screen column, with textured walls and distance shading. No engine, no libraries doing the work.",
+    tags: ["Raycasting", "Graphics"],
+    links: [{ label: "Play on Scratch", href: "https://scratch.mit.edu/projects/706403549" }],
   },
 ];

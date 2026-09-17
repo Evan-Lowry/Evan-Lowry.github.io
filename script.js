@@ -57,7 +57,7 @@ function tagHTML(tag) {
     const invert = INVERT_ICONS.has(tag) ? ` class="invert"` : "";
     return `<li class="tag-icon" title="${tag}"><img src="assets/tech/${file}" alt="${tag}"${invert} loading="lazy" width="22" height="22" /></li>`;
   }
-  return `<li>${tag}</li>`;
+  return "";
 }
 
 function mediaHTML(project) {
@@ -71,13 +71,12 @@ function mediaHTML(project) {
     return `
       <div class="card-media has-demo">
         ${inner}
-        <span class="play-badge" aria-hidden="true"><i></i>hover to play</span>
       </div>`;
   }
   return `
-    <div class="card-media is-empty" aria-hidden="true">
-      <span class="empty-dir">assets/demos/${slug}.mp4</span>
-      <span class="empty-hint">drop a demo here — plays on hover</span>
+    <div class="card-media is-empty${project.wellNote ? " is-notice" : ""}" aria-hidden="true">
+      ${project.wellNote ? "" : `<span class="empty-dir">assets/demos/${slug}.mp4</span>`}
+      ${project.wellNote ? `<span class="empty-note">${project.wellNote}</span>` : `<span class="empty-hint">drop a demo here — plays on hover</span>`}
     </div>`;
 }
 
@@ -98,7 +97,7 @@ function render(filter) {
         <h3>${project.title}</h3>
         <p>${project.blurb}</p>
         <ul class="tags">
-          ${project.tags.map((tag) => tagHTML(tag)).join("")}
+          ${project.tags.map((tag) => tagHTML(tag)).filter(Boolean).join("")}
         </ul>
         ${
           project.links.length
