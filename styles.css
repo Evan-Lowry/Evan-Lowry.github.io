@@ -763,6 +763,10 @@ h1 {
   align-items: center;
 }
 
+.tags:empty {
+  display: none;
+}
+
 .tags li.tag-icon {
   border: none;
   padding: 0;
